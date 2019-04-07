@@ -152,7 +152,7 @@ app.get('/api/tracks/:id', function(request, response){
         include: [Playlist]
     }).then((track) => {
         if (track) {
-            response.json(track);
+            response.status(200).json(track);
         } else {
             response.status(404).send();
         }
