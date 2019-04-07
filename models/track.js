@@ -8,7 +8,7 @@ module.exports = sequelize.define('track',{
         primaryKey: true,
         autoIncrement: true,
     },
-    name:{
+    name:{ 
         field: 'Name',
         type: Sequelize.STRING,
         validate: {
