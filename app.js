@@ -10,7 +10,7 @@ const app = express();
 const { Op } = Sequelize;
 
 app.use(bodyParser.json());
-
+ 
 Artist.hasMany(Album, {
     foreignKey: 'ArtistId'
 });
