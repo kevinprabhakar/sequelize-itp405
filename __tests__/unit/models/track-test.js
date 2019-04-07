@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Track = require('./../../models/track');
+const Track = require('./../../../models/track');
 
 describe('track', ()=>{
     it('should throw error when milliseconds is not numeric', async () => {
