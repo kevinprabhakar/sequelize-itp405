@@ -2,6 +2,4 @@ language: node_js
 node_js: "10"
 install: npm install
 before_script: npm i -g forever
-script:
-  - node app.js &
-  - npm test
+script: npm test
