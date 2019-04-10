@@ -4,10 +4,9 @@ const Joi = frisby.Joi;
 
 it('should return a status of 404 when the track is not found', ()=>{
     return frisby
-    .timeout(1000000)
     .patch('http://localhost:8000/api/tracks/-1')
     .expect('status',404);
-},1000000);
+});
 
 it('should return a status of 200 and have the correct body attributes',()=>{
     return frisby

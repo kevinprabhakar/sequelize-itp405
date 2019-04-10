@@ -57,7 +57,6 @@ app.patch('/api/tracks/:id', function(request, response){
 
     updateParams = {};
 
-
     if (request.body.milliseconds){
         updateParams["milliseconds"] = request.body.milliseconds;
     }
