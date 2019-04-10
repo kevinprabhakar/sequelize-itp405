@@ -6,7 +6,7 @@ it('should return a status of 404 when the track is not found', ()=>{
     return frisby
     .patch('http://localhost:8000/api/tracks/-1')
     .expect('status',404);
-});
+},10000000);
 
 it('should return a status of 200 and have the correct body attributes',()=>{
     return frisby
@@ -15,7 +15,7 @@ it('should return a status of 200 and have the correct body attributes',()=>{
     })
     .expect('status', 200)
     .expect('json','name','ITP');
-});
+},1000000);
 
 it('should return a status of 422 and have correct error messages when incorrect attributes sent to track patch', ()=>{
     return frisby
