@@ -2,6 +2,8 @@ const frisby = require('frisby');
 
 const Joi = frisby.Joi;
 
+jest.setTimeout(10000);
+
 it('should return a status of 404 when the track is not found', ()=>{
     return frisby
     .patch('http://localhost:8000/api/tracks/-1')
